@@ -1,0 +1,47 @@
+version: "3.8"
+
+services: 
+  api:
+    build: 
+      context: ./
+      dockerfile: ./builds/php-apache.Dockerfile
+    restart: always
+    networks: 
+      - rede
+    volumes: 
+      - ./src:/var/www/html
+    ports:
+      - "${API}:80"
+    depends_on: 
+      - mysql
+
+  mysql:
+    image: mysql:5.7.35
+    volumes: 
+      - mysql_data:/var/lib/mysql
+    restart: always
+    networks: 
+      - rede
+    environment:
+      MYSQL_DATABASE: "api"
+      MYSQL_ROOT_PASSWORD: "root"
+    
+  mysql_manager:
+    image: phpmyadmin:5
+    restart: always
+    ports: 
+      - "${PHPMYADMIN}:80"
+    networks: 
+      - rede
+    depends_on: 
+      - mysql
+    environment:
+      PMA_HOST: "mysql"
+      PMA_USER: "root"
+      PMA_PASSWORD: "root"
+
+volumes: 
+  mysql_data:
+
+networks: 
+  rede:

@@ -2,7 +2,7 @@
 
 ## Objetivo
 <!-- Criação de uma API REST que demonstre meus conhecimentos com Express.js, NodeJS, Docker e MySQL -->
-Criação de uma API REST que demonstre meus conhecimentos com Codeigniter, PHP, Docker, Nginx e MySQL
+Criação de uma API REST que demonstre meus conhecimentos com Codeigniter, PHP, Docker e MySQL
 
 ## O que ela faz?
 Ela retorna um JSON contendo as infomações da maquina que fez o request junto as informações de todas as datas de todas as requisições anteriores feitas pela mesma maquina via indentificação do IP da maquina.
