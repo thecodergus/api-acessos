@@ -1,7 +1,8 @@
 # api-acessos
 
 ## Objetivo
-Criação de uma API REST que demonstre meus conhecimentos com Express.js, NodeJS, Docker e MySQL
+<!-- Criação de uma API REST que demonstre meus conhecimentos com Express.js, NodeJS, Docker e MySQL -->
+Criação de uma API REST que demonstre meus conhecimentos com Codeigniter, PHP, Docker, Nginx e MySQL
 
 ## O que ela faz?
 Ela retorna um JSON contendo as infoamções da maquina que fez o request junto as informações de todas as datas de todas as requisições anteriores feitas pela mesma maquina.
@@ -10,4 +11,4 @@ Ela retorna um JSON contendo as infoamções da maquina que fez o request junto 
 1. Montar o ambiente:<br />
 1.1. Via Docker Compose com:<br />
 ```docker-compose up -d```<br />
-2. Acessando [127.0.0.1](http://127.0.0.1/) (porta 80)
+2. Dê get, post, put e delete em [127.0.0.1](http://127.0.0.1/) (porta 80) via Postman ou qualquer outra ferramenta adequada a tratar requisições em API RESTs.
