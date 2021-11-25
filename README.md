@@ -1,4 +1,4 @@
-# api-basica
+# api-acessos
 
 ## Objetivo
 Criação de uma API REST que demonstre meus conhecimentos com Express.js, NodeJS, Docker e MySQL
