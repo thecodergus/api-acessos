@@ -9,7 +9,7 @@ Ela retorna um JSON contendo as infoamções da maquina que fez o request junto 
 ## Como usar?
 1. Montar o ambiente:
 1.1. Via Docker Compose com:
-``docker-compose up -d``
+```docker-compose up -d```
 1.2. Via NodeJS(versão 16) diretamente:
-``cd /src && npm run start``
+```cd /src && npm run start```
 2. Acessando [127.0.0.1](http://127.0.0.1/) (porta 80)
