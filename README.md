@@ -7,7 +7,7 @@ Criação de uma API REST que demonstre meus conhecimentos com Express.js, NodeJ
 Ela retorna um JSON contendo as infoamções da maquina que fez o request junto as informações de todas as datas de todas as requisições anteriores.
 
 ## Como usar?
-1. Montar o ambiente:
+1. Montar o ambiente:\n
 1.1. Via Docker Compose com:
 ```docker-compose up -d```
 1.2. Via NodeJS(versão 16) diretamente:
