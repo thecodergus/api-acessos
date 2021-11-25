@@ -4,7 +4,7 @@
 Criação de uma API REST que demonstre meus conhecimentos com Express.js, NodeJS, Docker e MySQL
 
 ## O que ela faz?
-Ela retorna um JSON contendo as infoamções da maquina que fez o request junto as informações de todas as datas de todas as requisições anteriores.
+Ela retorna um JSON contendo as infoamções da maquina que fez o request junto as informações de todas as datas de todas as requisições anteriores feitas pela mesma maquina.
 
 ## Como usar?
 1. Montar o ambiente:<br />
