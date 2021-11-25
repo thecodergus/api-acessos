@@ -11,4 +11,4 @@ Ela retorna um JSON contendo as infomações da maquina que fez o request junto 
 1. Montar o ambiente:<br />
 1.1. Via Docker Compose com:<br />
 ```docker-compose up -d```<br />
-2. Dê get, post, put e delete em [127.0.0.1](http://127.0.0.1/) (porta 80) via Postman ou qualquer outra ferramenta adequada a tratar requisições em API RESTs.
+2. Dê get, post, put e delete em [127.0.0.1](http://127.0.0.1/) (porta 80) via Postman ou qualquer outra ferramenta adequada a tratar requisições em API RESTs será retornado o JSON com as informações.
