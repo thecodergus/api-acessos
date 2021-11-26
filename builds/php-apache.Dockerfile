@@ -1,20 +1,29 @@
-FROM php:7.2-apache
+FROM php:7.4.1-apache
 
 USER root
 
-RUN apt-get update && \
-    apt-get install -y libxml2-dev \
-    libfreetype6-dev \
-    libjpeg62-turbo-dev \
-    libmcrypt-dev \
+WORKDIR /var/www/html
+
+RUN apt-get update && apt-get install -y \
     libpng-dev \
-    nano \
-    libmcrypt4 \
-    libcurl3-dev \
-    apt-utils \
-    gzip \
-    iputils-ping
+    zlib1g-dev \
+    libxml2-dev \
+    libzip-dev \
+    libonig-dev \
+    zip \
+    curl \
+    unzip \
+    && docker-php-ext-configure gd \
+    && docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-install pdo_mysql \
+    && docker-php-ext-install mysqli \
+    && docker-php-ext-install zip \
+    && docker-php-source delete
 
-RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-RUN chmod -R  777 /var/www
+COPY ./config/vhost.conf /etc/apache2/sites-available/000-default.conf
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+RUN chown -R www-data:www-data /var/www/html \
+    && a2enmod rewrite
