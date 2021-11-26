@@ -7,12 +7,24 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 require __DIR__ . "/../models/indexModel.php";
 use models\index\IndexModel;
 
-class IndexController{
+Class IndexController{
     public function __invoke(Request $request, Response $response, $args){
         $ipAddress = $request->getAttribute('ip_address');
+        $userAgent = $request->getHeaders()["User-Agent"][0];
+        $model = new IndexModel();
 
-        $response->getBody()->write("Eae");
+        $select = $model->select($ipAddress);
 
-        return $response;
+        $indexResponse = [
+            "Ip" => $ipAddress,
+            "User-Agent" => $userAgent,
+            "Visits" => $select
+        ];
+
+        $model->insert($ipAddress);
+
+        $response->getBody()->write(json_encode($indexResponse));
+
+        return $response->withHeader('Content-Type', 'application/json');
     }
 }
