@@ -1,8 +1,8 @@
 # api-acessos
 
 ## Objetivo
-<!-- Criação de uma API REST que demonstre meus conhecimentos com Express.js, NodeJS, Docker e MySQL -->
-Criação de uma API REST que demonstre meus conhecimentos com PHP, Docker e MySQL e para esudos do Framework Slim 4, uma minimização do Laravel.
+<!-- Criação de uma API que demonstre meus conhecimentos com Express.js, NodeJS, Docker e MySQL -->
+Criação de uma API que demonstre meus conhecimentos com PHP, Docker e MySQL e para esudos do Framework Slim 4, uma minimização do Laravel.
 
 ## O que ela faz?
 Ela retorna um JSON contendo as infomações da maquina que fez o request junto as informações de todas as datas de todas as requisições anteriores feitas pela mesma maquina via indentificação do IP da maquina.
