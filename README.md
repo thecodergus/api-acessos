@@ -1,11 +1,16 @@
 # api-acessos
 
 ## Objetivo
-<!-- Criação de uma API que demonstre meus conhecimentos com Express.js, NodeJS, Docker e MySQL -->
-Criação de uma API que demonstre meus conhecimentos com PHP, Docker e MySQL e para esudos do Framework Slim 4, uma minimização do Laravel.
+Criação de uma API que demonstre meus conhecimentos com PHP, Docker e MySQL e para fins de estudos do framework Slim Framework 4, uma minimização do Laravel e com foco em desenvolvimento de APIs.
 
 ## O que ela faz?
 Ela retorna um JSON contendo as infomações da maquina que fez o request junto as informações de todas as datas de todas as requisições anteriores feitas pela mesma maquina via indentificação do IP da maquina.
+
+## O que compõe o Projeto?
+1. Docker
+2. PHP 7.4
+3. Slim Framework 4
+4. MySQL 5.7.35
 
 ## Como usar?
 1. Montar o ambiente:<br />
