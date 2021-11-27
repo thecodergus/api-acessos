@@ -4,7 +4,7 @@
 Criação de uma API que demonstre meus conhecimentos com PHP, Docker e MySQL e para fins de estudos do framework Slim Framework 4, uma minimização do Laravel e com foco em desenvolvimento de APIs.
 
 ## O que ela faz?
-Ela retorna um JSON contendo as infomações da maquina que fez o request junto as informações de todas as datas de todas as requisições anteriores feitas pela mesma maquina via indentificação do IP da maquina.
+Ela retorna um JSON contendo as infomações da maquina que fez o request junto as informações de todas as datas de todas as requisições anteriores feitas pela mesma maquina via identificação do IP da maquina.
 
 ## O que compõe o Projeto?
 1. Docker
