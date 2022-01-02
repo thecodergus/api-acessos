@@ -18,4 +18,6 @@ Ela retorna um JSON contendo as infomações da maquina que fez o request junto 
 ```docker-compose up -d```<br />
 1.2. Dê as permissões:<br />
 ```docker-compose exec api chmod -R 755 .```<br />
-2. Dê get, post, put e delete em [127.0.0.1](http://127.0.0.1/) (porta 80) via Postman ou qualquer outra ferramenta adequada a tratar requisições em API será retornado o JSON com as informações sobre seu IP, seu User-Agent e as datas e os horarios em que sua Maquina/IP realizou requisições na API.
+2. Instale as dependencias:<br />
+```docker-compose exec api composer install```
+3. Dê get, post, put e delete em [127.0.0.1](http://127.0.0.1/) (porta 80) via Postman ou qualquer outra ferramenta adequada a tratar requisições em API será retornado o JSON com as informações sobre seu IP, seu User-Agent e as datas e os horarios em que sua Maquina/IP realizou requisições na API.
